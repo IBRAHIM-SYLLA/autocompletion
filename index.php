@@ -21,3 +21,4 @@
     <input id="barreRecherche" type="search" name="barreRecherche" placeholder="rechercher votre joueur">
     <button type="submit">rechercher</button>
 </form>
+<div id="list"></div>
