@@ -11,14 +11,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="recherche.php" method="get">
+        <div class="search-container">
+            <input type="text" name="barreRecherche" id="barreRecherche" placeholder="Search">
+            <div class="suggestions">
+                <ul></ul>
+            </div>
+        </div>
+    </form>
+
 </body>
 </html>
-<form action="recherche.php" method="get">
-    <input id="barreRecherche" type="text" name="barreRecherche" placeholder="rechercher votre joueur">
-    <button type="submit">rechercher</button>
-</form>
-<div id="list"></div>

@@ -14,7 +14,7 @@
 
     // on fait la requête qui va nous permettre de rechercher des joueurs
         // var_dump($motRechercher);
-        $sql = 'SELECT nom FROM om WHERE nom LIKE "%'.$motRechercher.'%" ORDER BY id DESC';
+        $sql = "SELECT nom FROM om WHERE nom LIKE '$motRechercher%' ORDER BY id DESC";
         $result = $bdd->prepare($sql);
         $result->execute();
         $joueur = $result->fetchAll();
