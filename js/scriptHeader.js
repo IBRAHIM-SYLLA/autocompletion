@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", function (){
                             item = item.replace(match[0], `<strong>${match[0]}</strong>`);
                             suggestions2.innerHTML += `<li>${item}</li>`;
                         }
-                        suggestions2.classList.add('has-suggestions');
+                        suggestions2.classList.add('has-suggestions2');
                     } else {
                         results = [];
                         suggestions2.innerHTML = '';
-                        suggestions2.classList.remove('has-suggestions');
+                        suggestions2.classList.remove('has-suggestions2');
                     }
                 }
 

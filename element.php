@@ -1,7 +1,7 @@
 <?php
 $motRechercher = $_GET['id'];
 // var_dump($resultatRecherche);
-$bdd = new PDO("mysql:host=localhost;dbname=autocompletion",'root','');
+$bdd = new PDO("mysql:host=localhost;dbname=autocompletion;charset=utf8",'root','');
 $bdd->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION);
 $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 

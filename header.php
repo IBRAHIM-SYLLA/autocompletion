@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1>L'ANNUAIRE OLYMPIEN</h1>
+        <a href="index.php"><h1>L'ANNUAIRE OLYMPIEN</h1></a>
         <form action="recherche.php" method="get">
             <div class="search-container">
                 <input type="text" name="barreRecherche" id="barreRecherche" placeholder="Search">

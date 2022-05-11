@@ -17,6 +17,7 @@ body {
 
 input {
   border: none;
+  border-bottom: 2px solid #e65c00;
 }
 
 .search-container {
@@ -62,10 +63,28 @@ ul li:hover {
   background-color: #e60000;
 }
 
-input {
-  border-bottom: 2px solid #e65c00;
-}
 #index img {
   height: 300px;
   width: 350px;
+}
+@media  (min-width: 375px) and (max-width: 667px) {
+  #index img {
+    height: 200px;
+    width: 250px;
+  }
+  .search-container {
+    width: 400px;
+    position: relative;
+    margin-left: 20%;
+  }
+
+  .search-container input, .search-container .suggestions {
+    width: 50%;
+  }
+
+  .search-container input {
+    background: rgba(255, 255, 255, 0.2);
+    height: 60px;
+    padding: 0 10px;
+  }
 }

@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 header{
     height: 20vh;
     background: linear-gradient(#0a6daa, whitesmoke );
@@ -5,6 +8,10 @@ header{
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
+}
+a{
+  text-decoration: none;
+  color: #fff;
 }
 header #barreRecherche{
     width: 300px;
@@ -20,6 +27,8 @@ ul {
     max-height: 200px;
     overflow-y: auto;
     width: 20%;
+    color: black;
+    position: absolute;
 }
 
   ul.has-suggestions {
@@ -34,4 +43,33 @@ ul {
 
   ul li:hover {
     background-color: #e60000;
+  }
+  @media  (min-width: 375px) and (max-width: 667px) {
+    header{
+        height: 10vh;
+        background: linear-gradient(#0a6daa, whitesmoke );
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #fff;
+    }
+    header #barreRecherche{
+        width: 100px;
+        height: 15px;
+        border-radius: 20px;
+        border: 1px solid blue;
+    }
+    header h1{
+        font-size: 0.8em;
+    }
+    ul {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 5%;
+        max-height: 100px;
+        overflow-y: auto;
+        width: 40%;
+        position: absolute;
+    }
   }
