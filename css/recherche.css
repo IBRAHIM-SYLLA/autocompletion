@@ -1,4 +1,33 @@
-img{
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background: #c4f6f9 ; */
+  }
+#joueurs img{
     height: 200px;
     width: 200px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+#joueurs{
+    /* border: 3px solid; */
+    display: flex;
+    flex-wrap: wrap;
+}
+#joueurs a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    transition: 0.3s;
+    transition-property: background, box-shadow, border;
+}
+#joueurs a:hover{
+    border: 2px solid #80F9FF ;
+    background: #EEFEFF;
+    box-shadow: 0 0 30px #80F9FF ;
 }

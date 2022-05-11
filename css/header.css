@@ -1,0 +1,37 @@
+header{
+    height: 20vh;
+    background: linear-gradient(#0a6daa, whitesmoke );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+header #barreRecherche{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5%;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 20%;
+}
+
+  ul.has-suggestions {
+    display: block;
+  }
+
+  ul li {
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  ul li:hover {
+    background-color: #e60000;
+  }
