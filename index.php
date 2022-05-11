@@ -23,6 +23,7 @@
             <form action="recherche.php" method="get">
                 <div class="search-container">
                     <input type="text" name="barreRecherche" id="barreRecherche" placeholder="Search">
+                    <button type="submit">recherche</button>
                     <div class="suggestions">
                         <ul></ul>
                     </div>

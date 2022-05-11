@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
                 function useSuggestion(e) {
                     input.value = e.target.innerText;
-                    (document.location.href = `./recherche.php?search=${input.value}`)
+                    // (document.location.href = `./recherche.php?search=${input.value}`)
                     input.focus();
                     suggestions.innerHTML = '';
                     suggestions.classList.remove('has-suggestions');
